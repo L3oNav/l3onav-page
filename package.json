@@ -4,13 +4,14 @@
   "private": true,
   "dependencies": {
     "node-sass": "^4.12.0",
-    "react": "^16.6.1",
-    "react-dom": "^16.6.1",
-    "react-router-dom": "^5.0.1",
-    "react-scripts": "^3.0.1"
+    "react": "16.6.1",
+    "react-dom": "16.6.1",
+    "react-router-dom": "5.0.1",
+    "react-scripts": "3.0.1"
   },
   "scripts": {
     "dev": "react-scripts start --port $PORT",
+    "start": "react-scripts start --port $PORT",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -23,5 +24,8 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "devDependencies": {
+    "sass-lint": "1.13.1"
+  }
 }

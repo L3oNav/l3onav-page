@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+*{
+    color:white;
+}
+.grid{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 500px 1fr 1fr 1fr;
+    grid-template-areas:"info"
+                        "content"
+                        "footer";
+}
+.grid-info{
+    grid-area: info;
+    position: relative;
+    display: block;
+}
+@import './header.scss';
+h1,h2,,h3{
+    color: #6CE6DD;
+}
