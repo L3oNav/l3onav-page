@@ -1,21 +1,34 @@
-@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
-*{
-    color:white;
-}
+@import url('https://fonts.googleapis.com/css?family=Red+Hat+Display|Roboto&display=swap');
+
+
 .grid{
     display: grid;
+    grid-gap: 30px;
     grid-template-columns: 100%;
-    grid-template-rows: 500px 1fr 1fr 1fr;
+    grid-template-rows: 500px 1fr 100px;
     grid-template-areas:"info"
                         "content"
                         "footer";
 }
+
 .grid-info{
     grid-area: info;
     position: relative;
     display: block;
 }
-@import './header.scss';
-h1,h2,,h3{
-    color: #6CE6DD;
+.grid-content{
+    grid-area: content;
+   
 }
+
+h1{
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+h3{ 
+    color: white;
+    font-family: 'Red Hat Display', sans-serif;
+}
+@import './header.scss';
+@import './content.scss'

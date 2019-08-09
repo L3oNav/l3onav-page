@@ -1,11 +1,13 @@
 import React, { Component } from 'react';
-import Info from './Templates/Info.jsx'
-
+import Header from './Templates/Header.jsx'
+import Content from './Templates/content.jsx'
 class App extends Component {
   render() {
     return (
       <div className="grid">
-          <Info/>
+          <Header/>
+          
+          <Content/>
       </div>
     );
   }
