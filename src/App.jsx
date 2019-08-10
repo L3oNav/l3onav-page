@@ -6,7 +6,6 @@ class App extends Component {
     return (
       <div className="grid">
           <Header/>
-          
           <Content/>
       </div>
     );

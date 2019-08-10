@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 
 const Biography = (props) => {
     return (
@@ -10,10 +10,18 @@ const Biography = (props) => {
                     </p>
                     <p className="biography-text">
                         I am Leonardo Nava someone with the idea of ​​studying physics, I like to learn new things,
-                        technological culture, read from scientific dissemination, finance, to fantasy.
+                        technological culture, read from scientific dissemination, finance to fantasy.
                         I am a web developer jr and I use Reactjs.
                     </p>
                 </div>
+            </div>
+            <div className="contact-container">
+                <a className="icon-instagram" href="https://www.instagram.com/l3onav.jsx/?hl=es-la" target="_blank"></a>
+                <a className="icon-linkedin" href="https://www.linkedin.com/in/leonardo-alan-nava-hernandez-6015b3160/" target="_blank"></a>
+                <a className="icon-twitter" href="https://twitter.com/L3oNav" target="_blank"></a>
+                <a className="icon-github" href="https://github.com/L3oNav" target="_blank"></a>
+                <a className="icon-mail" href="https://mail.google.com/mail/u/0/#inbox?compose=DmwnWrRvwLrGrFgTlHFDjWqFfbHzgDNZclkzMrvlHdxmfBkcZbjFWdxRrqtNrzRLXbFvBKGdFZhl" target="_blank"></a>
+                <a className="icon-cloud" href="https://gitlab.com/L3oNav/l3onav-portfolio" target="_blank"></a>
             </div>
         </div>
     );
