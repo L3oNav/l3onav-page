@@ -22,11 +22,21 @@
 }
 
 .User-text{
+    user-select: none;
     margin-left: 20px;
+    a{
+        text-decoration: none;
+    }
 }
 
 .Header-user{
     display: flex;
     align-items: center;
     margin-top: 50px;
+}
+.a-container:hover{
+    h1,h3{
+        transform: scale(1.1);
+        transition: .200s;
+    }
 }

@@ -48,3 +48,9 @@
     font-size: 30px;
     color: #727272;
 }
+[class^="icon-"]:hover,
+[class*=" icon-"]:hover{
+    transform: scale(1.1);
+    transition: .200s;
+    color: aquamarine;
+}
