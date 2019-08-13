@@ -17,7 +17,7 @@ const Biography = (props) => {
             </div>
             <div className="contact-container">
                 <a className="icon-instagram" href="https://www.instagram.com/l3onav.jsx/?hl=es-la" target="_blank"></a>
-                <a className="icon-linkedin" href="https://www.linkedin.com/in/leonardo-alan-nava-hernandez-6015b3160/" target="_blank"></a>
+                <a className="icon-linkedin" href="https://www.linkedin.com/in/leonardo-nava-6015b3160" target="_blank"></a>
                 <a className="icon-twitter" href="https://twitter.com/L3oNav" target="_blank"></a>
                 <a className="icon-github" href="https://github.com/L3oNav" target="_blank"></a>
                 <a className="icon-mail" href="https://mail.google.com/mail/u/0/#inbox?compose=DmwnWrRvwLrGrFgTlHFDjWqFfbHzgDNZclkzMrvlHdxmfBkcZbjFWdxRrqtNrzRLXbFvBKGdFZhl" target="_blank"></a>
