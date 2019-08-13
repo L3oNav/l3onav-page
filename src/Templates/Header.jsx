@@ -1,8 +1,9 @@
 /* eslint-disable jsx-a11y/alt-text */
 import React from 'react';
 import UserInf from '../Components/UserInf.jsx'
-import UserImg from '../Images/UserImg.jpeg'
 import FontImg from '../Images/fondoUserInfo.jpg'
+import UserImg from '../Images/UserImg.jpeg'
+
 const User = {
     img: UserImg,
     name:'Leonardo Nava',
