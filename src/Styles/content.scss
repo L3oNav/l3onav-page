@@ -1,12 +1,3 @@
-[class^="icon-"],
-[class*=" icon-"] {
-    text-decoration: none;
-    margin-top: 50px;
-    margin-left: 50px;
-    font-size: 30px;
-    color: #727272;
-}
-
 [class^="icon-"]:hover,
 [class*=" icon-"]:hover {
     transform: scale(1.1);
@@ -14,7 +5,8 @@
     color: aquamarine;
 }
 
-@media screen and (min-width: 1000px) and (max-width: 2000px) {
+//? Normal responsive.
+@media screen and (min-width: 1000px) {
 
     .container {
         width: 900px;
@@ -34,6 +26,7 @@
     .biography-text {
         font-family: 'Red Hat Display', sans-serif;
         text-align: justify;
+        font-size: 22px;
     }
 
     .line-h {
@@ -62,10 +55,70 @@
 
     .contact-container {
         display: flex;
-        justify-content: center;
+        justify-content: space-evenly;
         color: black;
     }
 
+    [class^="icon-"],
+    [class*=" icon-"] {
+        text-decoration: none;
+        margin-top: 50px;
+        font-size: 35px;
+        color: #727272;
+    }
+}
+//? tablet responsive
+@media screen and (min-width: 500px) and (max-width:999px) {
+
+    .container {
+        width: 700px;
+        height: 400px;
+        background-color: #FAFAFA;
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .biography {
+        width: 60%;
+        text-align: justify;
+    }
+
+    .biography-text {
+        font-family: 'Red Hat Display', sans-serif;
+        text-align: justify;
+    }
+
+    .line-h {
+        width: 100%;
+        height: 1px;
+        background-color: #B3B5CA;
+    }
+
+    .container-content {
+        margin-top: 10px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .text-about {
+        color: black;
+        text-align: center;
+    }
+
+    .biography-display {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .contact-container {
+        display: flex;
+        justify-content: center;
+        color: black;
+    }
     [class^="icon-"],
     [class*=" icon-"] {
         text-decoration: none;
@@ -74,16 +127,9 @@
         font-size: 30px;
         color: #727272;
     }
-
-    [class^="icon-"]:hover,
-    [class*=" icon-"]:hover {
-        transform: scale(1.1);
-        transition: .200s;
-        color: aquamarine;
-    }
-
 }
-@media screen and (min-width: 500px) and (max-width:999px) {
+//? Phone responsive.
+@media screen and (min-width: 250px) and (max-width: 499px){
 
     .container {
         width: 700px;
@@ -131,14 +177,16 @@
 
     .contact-container {
         display: flex;
-        justify-content: center;
+        justify-content: space-evenly;
         color: black;
     }
 
-}
-
-@media screen and (min-width: 250px) and (max-width: 499px){
-
-    
+    [class^="icon-"],
+    [class*=" icon-"] {
+        text-decoration: none;
+        margin-top: 30px;
+        font-size: 25px;
+        color: #727272;
+    }
 
 }
