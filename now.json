@@ -1,1 +1,5 @@
-{"name":"Portfolio"}
+{
+    "name": "Portfolio",
+    "version":"1",
+    "alias": ["L3oNav.com", "L3oNav"] 
+}
