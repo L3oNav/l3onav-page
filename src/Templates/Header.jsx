@@ -3,7 +3,7 @@ import React from 'react';
 import UserInf from '../Components/UserInf.jsx'
 import FontImg from '../Images/fondoUserInfo.jpg'
 import UserImg from '../Images/UserImg.jpeg'
-
+import LangSelector from '../Components/LangSelector.jsx'
 const User = {
     img: UserImg,
     name:'Leonardo Nava',
@@ -14,7 +14,10 @@ const User = {
 
 const Header = () => {
   return (
-    <div className="grid-info" >
+    <div className="grid-info">
+      <div>
+        <LangSelector/>
+      </div>
       <div className="overflow">
         <img src={FontImg} className="font-img" />
       </div>

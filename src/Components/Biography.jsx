@@ -1,5 +1,6 @@
 import React from 'react';
-
+import {connect} from 'react-redux'
+import Reducers from '../Reducers';
 const Biography = (props) => {
     return (
         <div>
@@ -28,6 +29,8 @@ const Biography = (props) => {
         </div>
     );
 }
-
-
 export default Biography;
+// const mapLanguages = () => (
+//      Reducers.languagesReducer
+// )
+// export default connect(mapLanguages)(Biography);
