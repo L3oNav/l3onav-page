@@ -30,7 +30,7 @@
   },
   "scripts": {
     "dev": "react-scripts start --port $PORT",
-    "start": "react-scripts start --port $PORT",
+    "start": "serve -s build",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
