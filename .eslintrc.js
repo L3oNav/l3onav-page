@@ -22,7 +22,6 @@ module.exports = {
   },
   plugins: [
     'react',
-    "no-unused-expressions",
     "eslint-plugin-prettier",
     "eslint-config-prettier"
   ],
