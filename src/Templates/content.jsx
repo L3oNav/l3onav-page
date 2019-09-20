@@ -1,10 +1,11 @@
 import React, { Component } from "react";
 import Biography from "../Components/Biography.jsx";
 import Portfolio from "../Components/Projects.jsx";
+
 class Content extends Component {
-  // eslint-disable-next-line no-useless-constructor
-  constructor(props) {
-    super(props);
+  constructor() {
+    super();
+
   }
   render() {
     return (
@@ -13,7 +14,7 @@ class Content extends Component {
         <div className="line-h" />
         <div className="container-content">
           <div className="container">
-            <Biography />
+              <Biography />
           </div>
         </div>
         <div className="portfolio-container">
@@ -23,5 +24,4 @@ class Content extends Component {
     );
   }
 }
-
 export default Content;

@@ -1,5 +1,6 @@
 {
-    "job": "Web Developer Reactjs and Django",
-    "title": "Hola Mundo!",
-    "biography": "Soy Leonardo Nava, un chico con la idea de estudiar física, me gusta aprender cosas nuevas todos los días, cultura de la tecnología, leer desde la divulgación científica, las finanzas hasta la fantasía. Soy un desarrollador web jr y uso Reactjs y Django."
+        "name":"Us",
+        "job": "Web Developer Reactjs and Django",
+        "title": "Hello world!",
+        "biography": "I am Leonardo Nava someone with the idea of ​​studying physics, I like to learn new things, technological culture, read from scientific dissemination, finance to fantasy. I am a web developer jr and I use Reactjs."
 }

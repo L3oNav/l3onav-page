@@ -22,7 +22,9 @@ module.exports = {
   },
   plugins: [
     'react',
-    "no-unused-expressions"
+    "no-unused-expressions",
+    "eslint-plugin-prettier",
+    "eslint-config-prettier"
   ],
   rules: {
     "react/jsx-filename-extension":[1,{

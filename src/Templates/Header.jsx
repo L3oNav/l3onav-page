@@ -4,6 +4,7 @@ import UserInf from '../Components/UserInf.jsx'
 import FontImg from '../Images/fondoUserInfo.jpg'
 import UserImg from '../Images/UserImg.jpeg'
 import LangSelector from '../Components/LangSelector.jsx'
+
 const User = {
     img: UserImg,
     name:'Leonardo Nava',
