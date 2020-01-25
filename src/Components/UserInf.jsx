@@ -10,6 +10,7 @@ function UserInf(props) {
             <h1>{props.UsrName}</h1>
             <h3>{props.UsrJob}</h3>
           </a>
+            <h3 style={{marginLeft:'70px'}}>click &#8593;</h3>
         </div>
       </div>
     </div>
