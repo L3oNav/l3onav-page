@@ -14,25 +14,34 @@
   "license": "MIT",
   "private": true,
   "dependencies": {
+    "babel-loader": "^8.0.6",
     "classnames": "2.2.6",
+    "css-loader": "^3.4.2",
     "eslint-config-react-app": "5.0.1",
     "eslint-plugin-no-unused-expressions": "0.1.0",
     "eslint-plugin-prettier": "3.1.0",
+    "file-loader": "^5.1.0",
+    "html-webpack-plugin": "^3.2.0",
+    "image-webpack-loader": "^6.0.0",
     "node-sass": "4.12.0",
     "react": "16.8.6",
     "react-dom": "16.8.6",
+    "react-icons": "^3.9.0",
     "react-particles-js": "2.7.0",
     "react-redux": "7.1.0",
     "react-router-dom": "5.0.1",
     "react-scripts": "3.0.1",
     "redux": "4.0.4",
     "redux-thunk": "2.3.0",
-    "serve": "^11.1.0"
+    "sass-loader": "^8.0.2",
+    "serve": "^11.1.0",
+    "webpack": "^4.41.6",
+    "webpack-dev-server": "^3.10.3"
   },
   "scripts": {
-    "dev": "react-scripts start --port $PORT",
-    "start": "serve -s build",
-    "build": "react-scripts build",
+    "dev": "webpack-dev-server",
+    "start": "serve -s dist",
+    "build": "webpack --production",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },
@@ -46,8 +55,8 @@
     "not op_mini all"
   ],
   "devDependencies": {
-    "@babel/preset-env": "7.5.5",
-    "@babel/preset-react": "7.0.0",
+    "@babel/preset-env": "^7.8.6",
+    "@babel/preset-react": "^7.8.3",
     "@now/node": "0.12.7",
     "@testing-library/react": "9.1.0",
     "babel-jest": "24.8.0",
@@ -56,6 +65,8 @@
     "enzyme-adapter-react-16": "1.14.0",
     "prettier": "1.18.2",
     "react-test-renderer": "16.9.0",
-    "sass-lint": "1.13.1"
+    "sass-lint": "1.13.1",
+    "styled-components": "^5.0.1",
+    "webpack-cli": "^3.3.11"
   }
 }

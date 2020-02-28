@@ -10,8 +10,7 @@ class Portfolio extends Component {
         return (
             <div>
                 <h2> Projects </h2>
-                <Projects
-                />
+                <Projects />
             </div>
         );
     }

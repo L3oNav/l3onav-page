@@ -1,10 +1,13 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
+import { MdLanguage } from 'react-icons/md'
+import { LangSelectorContainer, Button } from './styles'
 import {
 	changeLanguage,
 	getLanguages,
 	getLanguage,
-} from "../Redux/actions/index";
+} from "../../Redux/actions/index";
+
 class LangSelector extends Component {
 	constructor(props) {
 		super(props);
@@ -15,7 +18,7 @@ class LangSelector extends Component {
 		this.handleClickLangIcon = this.handleClickLangIcon.bind(this);
 		this.handleclickUpdateLanguage = this.handleclickUpdateLanguage.bind(this);
 	}
-	handleClickLangIcon = () => {
+	handleClickLangIcon() {
 		this.setState((state) => ({
 			BtnActiveLang: !state.BtnActiveLang,
 		}));
@@ -37,24 +40,25 @@ class LangSelector extends Component {
 	render() {
 		const { languages } = this.props;
 		return (
-			<div className='LangSelector-cont'>
-				<button
-					className='icon-lang btn-lang'
+			<LangSelectorContainer>
+				<MdLanguage
+					size="35px"
+					color="#219100"
 					type='button'
 					onClick={this.handleClickLangIcon}
 				/>
-				<div className='container-selector'>
+				<div>
 					{this.state.BtnActiveLang
 						? languages.map((lang) => (
-								<div
+								<Button
 									className='btn-EsUs'
 									onClick={() => this.handleclickUpdateLanguage(lang.name, lang)}>
 									{lang.name}
-								</div>
+								</Button>
 						  ))
 						: null}
 				</div>
-			</div>
+			</LangSelectorContainer>
 		);
 	}
 }

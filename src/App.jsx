@@ -1,16 +1,14 @@
 import React, { Component } from 'react';
-import Header from './Templates/Header.jsx'
+import Header from './Templates/Header/index.jsx'
 import Content from './Templates/content.jsx'
 
-class App extends Component {
-  render() {
+const App = () => {
     return (
       <React.Fragment className="grid">
           <Header/>
           <Content/>
       </React.Fragment>
     );
-  }
 }
 
-export default App; 
+export default App;
