@@ -16,3 +16,8 @@ export const BoxContainer = styled.div`
     align-items: center;
     justify-content: center;
 `
+
+export const PortfolioContainer = styled.div`
+    display: grid;
+    grid-column: 550px 550px 550px;
+`

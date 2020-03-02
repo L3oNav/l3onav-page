@@ -1,5 +1,6 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const path = require('path')
+const CopyWebpackPlugin = require('copy-webpack-plugin')
 module.exports = {
     output: {
         path: path.resolve(__dirname, 'build'),
@@ -18,7 +19,7 @@ module.exports = {
                 }
             },
             {
-                test:/\.(gif|png|jpe?g|svg)$/i,
+                test:/\.(gif|png|jpe?g|svg|pdf)$/i,
                 use: [
                     'file-loader',
                     {

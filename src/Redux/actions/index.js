@@ -1,22 +1,26 @@
-import {changeLanguageType, getLanguageType, getLanguagesType} from './ActionsType'
+import {
+	changeLanguageType,
+	getLanguageType,
+	getLanguagesType
+} from "./ActionsType";
 import us from "../../Languages/us.json";
 import es from "../../Languages/es.json";
-var changeTo = 'Us'
+var changeTo = "Us";
 export const changeLanguage = changeTo => dispatch => {
-  dispatch({
-    type: changeLanguageType,
-    payload: changeTo 
-  })
+	dispatch({
+		type: changeLanguageType,
+		payload: changeTo
+	});
 };
 
 export const getLanguage = () => dispatch => {
-  dispatch({
-    type: getLanguageType
-  })
+	dispatch({
+		type: getLanguageType
+	});
 };
 
 export const getLanguages = () => dispatch => {
-  dispatch({
-    type: getLanguagesType
-  })
+	dispatch({
+		type: getLanguagesType
+	});
 };
