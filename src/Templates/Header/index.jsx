@@ -12,7 +12,6 @@ import UserImg from "../../Images/Userimg.jpg";
 //? Styles
 import {Container, ContainerInfo, ContainerChildren} from './styles' 
 
-
 const User = {
 	img: UserImg,
 	name: "Leonardo Nava",
