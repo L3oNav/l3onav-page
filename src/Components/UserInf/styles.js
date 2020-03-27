@@ -1,5 +1,5 @@
 import styled, {keyframes} from "styled-components";
-
+const min_width_phone = '350px';
 export const AnimactionsKeyframes = keyframes`
     from {
         filter: blur(5px);
@@ -17,10 +17,16 @@ export const Container = styled.div`
     display: flex;
     align-items: center;
     & div {
-        margin-left: 50px;
+        margin-left: 30px;
     }
 `
 export const InfoContainer = styled.div`
+    @media screen and (min-width: ${min_width_phone}){
+        font-size: 10px;
+    }
+    @media screen and (min-width: 1000px){
+        font-size: 15px;
+    }
     color: white;
     &:hover{
         transform: scale(1.1)
@@ -31,8 +37,16 @@ export const InfoContainer = styled.div`
     }
 `
 export const Img = styled.img`
-    width: 300px;
-    height: 300px;
-    border-radius: 20%;
-    overflow: hidden; 
+    @media screen and (min-width:1000px){
+        width: 300px;
+        height: 300px;
+        border-radius: 20%;
+        overflow: hidden;
+    }
+    @media screen and (min-width:${min_width_phone}){
+        width: 250px;
+        height: 200px;
+        border-radius: 20%;
+        overflow: hidden;
+    }
 `

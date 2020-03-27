@@ -1,13 +1,18 @@
 import { createGlobalStyle } from "styled-components";
 
 export const GlobalStyle = createGlobalStyle`
+    @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
     html{
-        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-family: 'Montserrat', sans-serif;
         color: #fff;
     }
     body{
         padding: 0;
         margin: 0;
         background-color: #242424;
+    }
+    #root{
+        /* width:100%;
+        height: 100%; */
     }
 `;

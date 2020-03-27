@@ -10,7 +10,7 @@ import IfBackground from "../../Components/IfBackground/index.jsx";
 import UserInf from "../../Components/UserInf/index.jsx";
 import UserImg from "../../Images/Userimg.jpg";
 //? Styles
-import {Container, ContainerInfo, ContainerChildren} from './styles' 
+import {Container, ContainerInfo, ContainerChildren} from './styles'
 
 const User = {
 	img: UserImg,
@@ -25,11 +25,11 @@ const Header = ({ language }) => {
 			<LangSelector/>
 			<IfBackground/>
 			<ContainerChildren>
-			<ContainerInfo>
-					{language ? (
-						<UserInf UsrImg={User.img} UsrName={User.name} UsrJob={language.job} />
-					) : null}
-				</ContainerInfo>
+				<ContainerInfo>
+						{language ? (
+							<UserInf UsrImg={User.img} UsrName={User.name} UsrJob={language.job} />
+						) : null}
+					</ContainerInfo>
 			</ContainerChildren>
 		</Container>
 	);

@@ -17,18 +17,17 @@ export const Article = styled.a`
     animation: 1.5s ${AnimactionsKeyframes} ease;
     text-decoration: none;
     color: white;
-    width: 550px;
-    height: 300px;
+    width: 450px;
+    height: 350px;
 `
-
 
 export const Img = styled.img`
     width: 450px;
-    height: 350px;
+    height: 345px;
     border-radius: 8px;
 `
 export const ContainerCard = styled.div`
-    width:500px;
+    width:450px;
     margin: 0;
     padding: 0;
 `

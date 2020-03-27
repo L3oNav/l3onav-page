@@ -1,18 +1,16 @@
 import React, { Component } from 'react';
 import Particles from 'react-particles-js'
-import { ContainerParticles } from './styles';
+import { ContainerParticles,ParticlesEffect } from './styles';
 
 class IfBackground extends Component {
   render() {
     return (
         <ContainerParticles>
-            <Particles
+            <ParticlesEffect
                 params={{
                     "particles": {
                         "number": {
-                            "value": 50,
-                            "max":70
-                            
+                            "value": 25
                         },
                         "size": {
                             "value": 3
@@ -21,14 +19,13 @@ class IfBackground extends Component {
                     "interactivity": {
                         "events": {
                             "onclick": {
-                                "enable": true,
-                                "mode": "push"
+                                "enable": false
                             }
                         }
                     }
                 }}
-            />  
-        </ContainerParticles>   
+            />
+        </ContainerParticles>
     );
   }
 }
