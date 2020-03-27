@@ -1,5 +1,6 @@
 import styled from "styled-components";
 
+const min_width_phone = '350px'
 
 export const ContentContainer = styled.div`
     display: flex;
@@ -8,8 +9,10 @@ export const ContentContainer = styled.div`
 `
 
 export const BoxContainer = styled.div`
-    width: 650px;
-    height: 400px;
+    @media screen and (min-width:${min_width_phone}) and (max-width: 999px){
+        width: 300px;
+        height: 400px;
+    }
     background-color: #242424;
     border-radius: 20px;
     display: flex;

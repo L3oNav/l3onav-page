@@ -6,7 +6,7 @@ const App = porps => {
 	return (
 		<React.Fragment className='grid'>
 			<Header />
-			{/* <Content /> */}
+			<Content />
 		</React.Fragment>
 	);
 };
