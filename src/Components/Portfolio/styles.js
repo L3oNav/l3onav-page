@@ -1,6 +1,7 @@
 import styled, {keyframes} from "styled-components";
 
-const min_width_phone = '350px'
+const min_width_phone = '319px'
+const max_width_phone = '750px'
 export const AnimactionsKeyframes = keyframes`
     from {
         filter: blur(5px);
@@ -14,20 +15,40 @@ export const AnimactionsKeyframes = keyframes`
 `
 
 export const Article = styled.a`
-    animation: 1.5s ${AnimactionsKeyframes} ease;
-    text-decoration: none;
-    color: white;
-    width: 300px;
-    height: auto;
+    @media screen and (min-width: ${min_width_phone}) and (max-width: ${max_width_phone}){
+        animation: 1.5s ${AnimactionsKeyframes} ease;
+        text-decoration: none;
+        color: white;
+        width: 300px;
+        height: auto;
+    }
+    @media screen and (min-width: 751px) and (max-width:1024px){
+        animation: 1.5s ${AnimactionsKeyframes} ease;
+        text-decoration: none;
+        color: white;
+        width: 300px;
+        height: auto;
+    }
+    @media screen and (min-width: 1025px) and (max-width: 2000px){
+        animation: 1.5s ${AnimactionsKeyframes} ease;
+        text-decoration: none;
+        width: 450px;
+        height: 350px;
+    }
 `
 
 export const Img = styled.img`
-    @media screen and (min-width: 1000px){
+    @media screen and (min-width: 1025px) and (max-width: 2000px){
         width: 450px;
-        height: 345px;
+        height: 350px;
         border-radius: 8px;
     }
-    @media screen and (min-width: ${min_width_phone}){
+    @media screen and (min-width: 751px) and (max-width:1024px){
+        width: 475px;
+        height: 375px;
+        border-radius: 8px;
+    }
+    @media screen and (min-width: ${min_width_phone}) and (max-width: ${max_width_phone}){
         width: 300px;
         height: auto;
         border-radius: 8px;

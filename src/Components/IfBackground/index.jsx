@@ -10,7 +10,7 @@ class IfBackground extends Component {
                 params={{
                     "particles": {
                         "number": {
-                            "value": 25
+                            "value": 35
                         },
                         "size": {
                             "value": 3

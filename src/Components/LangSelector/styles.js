@@ -13,7 +13,7 @@ export const LangSelectorContainer = styled.div`
     & :hover{
         transform: scale(1.1)
     }
-`   
+`
 export const Button = styled.div`
     margin-top: 10px;
     margin-left: 9px;
