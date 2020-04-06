@@ -15,4 +15,8 @@ export const GlobalStyle = createGlobalStyle`
         /* width:100%;
         height: 100%; */
     }
-`;
+    a{
+        color: #fff;
+        text-decoration: none;
+    }
+`

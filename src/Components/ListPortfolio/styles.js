@@ -1,23 +1,17 @@
 import styled from "styled-components";
-const min_width_phone = '319px'
-const max_width_phone = '750px'
+import Widths from '../../mediaquery'
+
 export const ContainerList = styled.div`
-    @media screen and (min-width:${min_width_phone}) and (max-width: ${max_width_phone}){
-        grid-template-rows: repeat(auto-fill, 350px);
-        position: absolute;
-        left:50%;
-        margin-left:-150px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    @media screen and (min-width: ${Widths.mobileMin}) and (max-width: ${Widths.mobileMax}){
+        display: flex;
+        flex-direction: column;
     }
-    @media screen and (min-width: 751px) and (max-width:1024px){
-        grid-template-rows: repeat(auto-fill, 350px);
-        position: absolute;
-        left:50%;
-        margin-left:-225px;
-    }
-    @media screen and (min-width:1025px) and (max-width: 2000px){
+    @media screen and (min-width: ${Widths.tabletMin}) and (max-width: ${Widths.tabletMax}){
         display: grid;
-        grid-template-columns: repeat(3, 450px);
-        grid-gap: 5%;
-        justify-content: center;
+        grid-template-columns: repeat(2, 300px);
+        grid-column-gap: 100px;
     }
 `

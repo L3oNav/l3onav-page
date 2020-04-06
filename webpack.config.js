@@ -1,25 +1,27 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const path = require('path')
-const CopyWebpackPlugin = require('copy-webpack-plugin')
+const CompressionPlugin = require('compression-webpack-plugin')
+const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 module.exports = {
     output: {
         path: path.resolve(__dirname, 'build'),
-        filename: 'app.bundle.js'
+        filename: 'js/app.bundle.js',
+
     },
     module: {
         rules: [
             {
-                test:/\.(js|jsx)$/,
+                test:/\.(jsx?)$/,
                 exclude: /node_modules/,
                 use: {
                     loader: 'babel-loader',
                     options:{
-                        presets: ['@babel/preset-env', '@babel/preset-react'] 
+                        presets: ['@babel/preset-env', '@babel/preset-react']
                     }
                 }
             },
             {
-                test:/\.(gif|png|jpe?g|svg|pdf)$/i,
+                test:/\.(jpg|png|gif|woff|eot|ttf|svg|mp4|webm)$/,
                 use: [
                     'file-loader',
                     {
@@ -30,19 +32,22 @@ module.exports = {
                         }
                     }
                 ]
-            },
-            {
-                test:/\.s(c|a)ss$/,
-                use: [
-                    'sass-loader',
-                    'css-loader'
-                ]
             }
         ]
     },
     plugins:[
         new HtmlWebpackPlugin({
             template:'public/index.html'
+        }),
+        new CompressionPlugin({
+            exclude: '/node_modules/',
+
         })
-    ]
+    ],
+    optimization: {
+        minimizer: [new UglifyJsPlugin({
+            exclude: '/node_modules/',
+            test:/\.(jsx?)$/
+        })],
+    },
 }

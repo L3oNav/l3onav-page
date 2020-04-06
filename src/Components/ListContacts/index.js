@@ -29,7 +29,7 @@ const social = [
             url:"mailto:leo785.lol@gmail.com?",
         },
         {
-            id:5,
+            id:6,
             component:FiGitlab,
             url:"https://gitlab.com/L3oNav/l3onav-portfolio",
         }
@@ -38,7 +38,7 @@ const social = [
 export function ListConstacts(){
     return (
         <ContainerIcons>
-            {social.map(Icon=><Contact {...Icon} />)}
+            {social.map(Icon=><Contact key={Icon.id} {...Icon} />)}
         </ContainerIcons>
-    );    
+    );
 }

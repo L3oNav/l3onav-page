@@ -11,11 +11,11 @@ class Content extends Component {
 	render() {
 		return (
 			<div>
-				<ContentContainer>
-					<BoxContainer>
+				{/* <ContentContainer> */}
+					{/* <BoxContainer> */}
 						<Biography />
-					</BoxContainer>
-				</ContentContainer>
+					{/* </BoxContainer> */}
+				{/* </ContentContainer> */}
 				<ListPortfolio />
 			</div>
 		);

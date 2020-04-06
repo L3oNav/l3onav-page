@@ -1,5 +1,5 @@
 import React from 'react';
-import imgDefault from '../../Images/office.jpg'
+import imgDefault from '../../Images/Diplomas/diploma-react-1.jpg'
 import {Img, Article} from './styles';
 const DEFAULT_IMAGE = imgDefault;
 

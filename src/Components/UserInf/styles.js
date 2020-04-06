@@ -1,7 +1,6 @@
 import styled, {keyframes} from "styled-components";
 
-const min_width_phone = '350px'
-const max_width_phone = '750px'
+import Widths from '../../mediaquery.js'
 
 export const AnimactionsKeyframes = keyframes`
     0% {
@@ -15,53 +14,36 @@ export const AnimactionsKeyframes = keyframes`
 `
 
 export const Container = styled.div`
-    animation: 2s ${AnimactionsKeyframes} linear;
-    border-radius: 60px 10px 10px 60px;
+    position: absolute;
+    top: 26%;
+    left: 6%;
     display: flex;
+    justify-content: center;
     align-items: center;
-    & div {
-        margin-left: 30px;
+    flex-direction: row;
+    @media screen and (min-width: ${Widths.mobileMin}) and (max-width: ${Widths.mobileMax}){
+        flex-direction: column;
     }
 `
 export const InfoContainer = styled.div`
-    border-radius: 20%;
-    @media screen and (min-width: 751px) and (max-width:1024px){
-        font-size: 20px;
-    }
-    @media screen and (min-width: ${min_width_phone}) and (max-width: ${max_width_phone}){
-        font-size: 10px;
-    }
-    @media screen and (min-width: 1025px) and (max-width: 2000px){
-        font-size: 15px;
-    }
-    color: white;
-    &:hover{
-        transform: scale(1.1)
-    }
-    & a{
-        text-decoration: none;
-        color: white;
+    margin-left: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    @media screen and (min-width: ${Widths.mobileMin}) and (max-width: ${Widths.mobileMax}){
+        text-align: center;
     }
 `
 
 export const Img = styled.img`
-    box-shadow: 0 5px 12px 2px #757575;
-    @media screen and (min-width:1025px){
-        width: 300px;
-        height: 300px;
-        border-radius: 20%;
-        overflow: hidden;
+    height: auto;
+    border-radius: 50%;
+    @media screen and (min-width: ${Widths.tabletMin}) and (max-width: ${Widths.tabletMax}){
+        width: 35%;
     }
-    @media screen and (min-width: 751px) and (max-width:1024px){
-        /* width: 300px; */
-        height: 300px;
-        border-radius: 20%;
-        overflow: none;
-    }
-    @media screen and (min-width:${min_width_phone}) and (max-width:${max_width_phone}){
-        width: 250px;
-        height: 175px;
-        border-radius: 20%;
-        overflow: hidden;
+    @media screen and (min-width: ${Widths.mobileMin}) and (max-width: ${Widths.mobileMax}) {
+        width: 56.3%;
+        height: auto;
     }
 `

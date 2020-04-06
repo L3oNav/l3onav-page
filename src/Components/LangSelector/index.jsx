@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
 import { MdLanguage } from 'react-icons/md'
-import { LangSelectorContainer, Button } from './styles'
+import {LangSelectorContainer, Button} from './styles'
 import {
 	changeLanguage,
 	getLanguages,

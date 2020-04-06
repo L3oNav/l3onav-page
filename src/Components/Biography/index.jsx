@@ -17,8 +17,8 @@ class Biography extends React.Component {
     const { language } = this.props;
     return (
       <div>
-        <div className="biography-display">
-          {language? 
+        <div>
+          {language?
             <BoxBiography
               title={language.title}
               Biography={language.biography}
