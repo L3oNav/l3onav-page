@@ -10,37 +10,49 @@ import IfBackground from "../../Components/IfBackground/index.jsx";
 import UserInf from "../../Components/UserInf/index.jsx";
 import UserImg from "../../Images/Userimg.jpg";
 //? Styles
-import {Container, ContainerInfo, ContainerChildren, Background} from './styles'
+import {
+	Container,
+	ContainerInfo,
+	ContainerChildren,
+	Background
+} from "./styles";
 
 const User = {
 	img: UserImg,
 	name: "Leonardo Nava",
-	username: "@L3oNav",
+	username: "@L3oNav"
 };
 
 const Header = ({ language }) => {
 	getLanguage();
 	return (
-		<Container>
-			<LangSelector/>
-			<Background/>
-			<ContainerChildren>
-				<ContainerInfo>
-						{language ? (
-							<UserInf UsrImg={User.img} UsrName={User.name} UsrJob={language.job} />
-						) : null}
-					</ContainerInfo>
-			</ContainerChildren>
-		</Container>
+		<div>
+			<LangSelector />
+			<Background />
+			<div>
+				<div>
+					{language ? (
+						<UserInf
+							UsrImg={User.img}
+							UsrName={User.name}
+							UsrJob={language.job}
+						/>
+					) : null}
+				</div>
+			</div>
+		</div>
 	);
 };
 
-const mapStateToProps = (state) => {
+const mapStateToProps = state => {
 	return {
-		language: state.language,
+		language: state.language
 	};
 };
 const mapDispatchToProps = {
-	getLanguage,
+	getLanguage
 };
-export default connect(mapStateToProps, mapDispatchToProps)(Header)
+export default connect(
+	mapStateToProps,
+	mapDispatchToProps
+)(Header);

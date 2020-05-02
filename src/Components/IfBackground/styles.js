@@ -1,6 +1,5 @@
 import styled from "styled-components";
-import Particles from "react-particles-js";
-
+// import Particles from "react-particles-js";
 
 export const ContainerParticles = styled.div`
     display: block;
@@ -8,7 +7,7 @@ export const ContainerParticles = styled.div`
     width: 100%;
     height:100vh;
 `
-export const ParticlesEffect = styled(Particles)`
+export const ParticlesEffect = styled.div`
     width: 100%;
     height: 100%;
 `

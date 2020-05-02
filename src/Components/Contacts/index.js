@@ -9,6 +9,6 @@ export function Contact({url = "https://google.com", component = DEFAULT_ICON, c
     return (
         <Link href={url} target="_blank">
             <Icon color={color} size={size}/>
-        </Link>    
+        </Link>
     )
 }

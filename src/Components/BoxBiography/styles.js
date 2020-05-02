@@ -3,6 +3,7 @@ import Widths from '../../mediaquery'
 
 export const TextContainer = styled.p`
     text-align: justify;
+    font-size: 23px;
     @media screen and (min-width: ${Widths.tabletMin}) and (max-width: ${Widths.tabletMax}){
         font-size: 20px;
     }
@@ -16,5 +17,8 @@ export const ContainerBiography = styled.div`
     width: 95%;
     @media screen and (min-width: ${Widths.tabletMin}) and (max-width: ${Widths.tabletMax}){
         width: 80%;
+    }
+    @media screen and (min-width: ${Widths.desktopMin}){
+        width: 40%;
     }
 `

@@ -13,6 +13,9 @@ export const AnimactionsKeyframes = keyframes`
 `
 
 export const Article = styled.a`
+    @media screen and (min-width: ${Widths.desktopMin}){
+        width: 100%;
+    }
     @media screen and (min-width: ${Widths.mobileMin}) and (max-width: ${Widths.mobileMax}){
         width: 90%;
     }

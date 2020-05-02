@@ -1,7 +1,6 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const path = require('path')
-const CompressionPlugin = require('compression-webpack-plugin')
-const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
+const CompressionPlugin = require('compression-webpack-plugin');
 module.exports = {
     output: {
         path: path.resolve(__dirname, 'build'),
@@ -41,13 +40,6 @@ module.exports = {
         }),
         new CompressionPlugin({
             exclude: '/node_modules/',
-
         })
-    ],
-    optimization: {
-        minimizer: [new UglifyJsPlugin({
-            exclude: '/node_modules/',
-            test:/\.(jsx?)$/
-        })],
-    },
+    ]
 }
