@@ -4,7 +4,7 @@ import Content from "./Templates/Content/index.jsx";
 
 const App = () => {
 	return (
-		<React.Fragment className='grid'>
+		<React.Fragment className="content-grid">
 			<Header />
 			<Content />
 		</React.Fragment>

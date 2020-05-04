@@ -44,3 +44,13 @@
 .icon-git:before {
 	content: "\eae7";
 }
+
+
+@import '/Styles/Templates/Content.scss';
+@import '/Styles/Templates/Header.scss';
+@import '/Styles/Components/UserInf.scss';
+@import '/Styles/Components/LangSelector.scss';
+@import '/Styles/Components/ListContacts.scss';
+@import '/Styles/Components/portfolio.scss';
+@import '/Styles/Components/ListPortfolio.scss';
+@import '/Styles/Components/BoxBiography.scss';

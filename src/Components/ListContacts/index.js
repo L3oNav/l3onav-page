@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { Contact } from '../Contacts/index.js';
-import { ContainerIcons } from './styles.js'
 import {FiInstagram, FiLinkedin, FiTwitter, FiGithub, FiMail, FiGitlab} from 'react-icons/fi';
 
 const social = [
@@ -37,8 +36,10 @@ const social = [
 
 export function ListConstacts(){
     return (
-        <ContainerIcons>
-            {social.map(Icon=><Contact key={Icon.id} {...Icon} />)}
-        </ContainerIcons>
+        <div className="container-icons">
+            <div className="container-grid-icons">
+                {social.map(Icon=><Contact key={Icon.id} {...Icon} />)}
+            </div>
+        </div>
     );
 }

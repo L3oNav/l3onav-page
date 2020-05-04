@@ -42,6 +42,7 @@
     "reactstrap": "^8.4.1",
     "redux": "4.0.4",
     "redux-thunk": "2.3.0",
+    "sass": "^1.26.5",
     "sass-loader": "^8.0.2",
     "serve": "^11.1.0",
     "stylelint": "^13.2.1",
@@ -80,7 +81,7 @@
     "enzyme-adapter-react-16": "1.14.0",
     "prettier": "1.18.2",
     "react-test-renderer": "16.9.0",
-    "sass-lint": "1.13.1",
+    "sass-lint": "^1.13.1",
     "styled-components": "^5.0.1",
     "webpack-cli": "^3.3.11"
   }

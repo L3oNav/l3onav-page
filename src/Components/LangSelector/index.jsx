@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
 import { MdLanguage } from 'react-icons/md'
-import {LangSelectorContainer, Button} from './styles'
 import {
 	changeLanguage,
 	getLanguages,
@@ -40,7 +39,7 @@ class LangSelector extends Component {
 	render() {
 		const { languages } = this.props;
 		return (
-			<LangSelectorContainer>
+			<div className="lang-selector-container">
 				<MdLanguage
 					size="35px"
 					color="#219100"
@@ -50,15 +49,14 @@ class LangSelector extends Component {
 				<div>
 					{this.state.BtnActiveLang
 						? languages.map((lang) => (
-								<Button
-									className='btn-EsUs'
+								<div className="button-lang"
 									onClick={() => this.handleclickUpdateLanguage(lang.name, lang)}>
 									{lang.name}
-								</Button>
+								</div>
 						  ))
 						: null}
 				</div>
-			</LangSelectorContainer>
+			</div>
 		);
 	}
 }

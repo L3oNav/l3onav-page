@@ -5,17 +5,12 @@ import { getLanguage } from "../../Redux/actions/index";
 import { connect } from "react-redux";
 //? Components
 import LangSelector from "../../Components/LangSelector/index.jsx";
-import IfBackground from "../../Components/IfBackground/index.jsx";
+// import IfBackground from "../../Components/IfBackground/index.jsx";
 //? Images
 import UserInf from "../../Components/UserInf/index.jsx";
 import UserImg from "../../Images/Userimg.jpg";
 //? Styles
-import {
-	Container,
-	ContainerInfo,
-	ContainerChildren,
-	Background
-} from "./styles";
+
 
 const User = {
 	img: UserImg,
@@ -26,19 +21,16 @@ const User = {
 const Header = ({ language }) => {
 	getLanguage();
 	return (
-		<div>
+		<div className="content-grid-header">
 			<LangSelector />
-			<Background />
 			<div>
-				<div>
-					{language ? (
-						<UserInf
-							UsrImg={User.img}
-							UsrName={User.name}
-							UsrJob={language.job}
-						/>
-					) : null}
-				</div>
+				{language ? (
+					<UserInf
+						UsrImg={User.img}
+						UsrName={User.name}
+						UsrJob={language.job}
+					/>
+				) : null}
 			</div>
 		</div>
 	);

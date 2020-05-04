@@ -1,15 +1,15 @@
 import React from 'react'
-import {TextContainer, ContainerBiography} from './styles'
+// import './styles.scss'
 const BoxBiography = ({title, Biography}) => {
     return (
-        <ContainerBiography>
-            <TextContainer>
+        <div className="container-biography">
+            <div className="text-container">
                 {title}
-            </TextContainer>
-            <TextContainer> 
+            </div>
+            <div className="text-container">
                 {Biography}
-            </TextContainer>
-        </ContainerBiography>
+            </div>
+        </div>
     )
 }
 export default BoxBiography;

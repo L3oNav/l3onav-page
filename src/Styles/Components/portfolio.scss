@@ -1,0 +1,16 @@
+.portfolio-article {
+    @media screen and (min-width: 1441px){
+        width: 100%;
+    }
+	@media screen and (min-width: 700px) and (max-width: 725px) {
+        width: 90%;
+    }
+    @media screen and (min-width: 1024px) and (max-width: 1440px) {
+        width: 100%;
+    }
+}
+
+.portfolio-img {
+    width: 350px;
+    height: auto;
+}

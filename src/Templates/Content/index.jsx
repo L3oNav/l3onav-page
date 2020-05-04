@@ -8,7 +8,7 @@ class Content extends Component {
 	}
 	render() {
 		return (
-			<div>
+			<div className="content-grid-ContentBiography">
 				<Biography />
 				<ListPortfolio />
 			</div>

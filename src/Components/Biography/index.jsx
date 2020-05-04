@@ -16,7 +16,7 @@ class Biography extends React.Component {
   render() {
     const { language } = this.props;
     return (
-      <div>
+      <div className="content-grid-ContentBiography">
         <div>
           {language?
             <BoxBiography

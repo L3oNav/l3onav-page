@@ -1,13 +1,10 @@
-import styled from "styled-components";
-
-
-export const LangSelectorContainer = styled.div`
+.lang-selector-container{
     position: absolute;
     top: 2.5%;
     left: 5%;
-`
+}
 
-export const Button = styled.div`
+.button-lang{
     margin-top: 10px;
     margin-left: 9px;
     width: 25px;
@@ -16,5 +13,4 @@ export const Button = styled.div`
     font-size: 15px;
     color: #219100;
     border-radius: 50%;
-
-`
+}

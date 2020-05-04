@@ -1,6 +1,5 @@
 import React from "react";
 import Portfolio from "../Portfolio";
-import { ContainerList, Container, List } from "./styles";
 //? Images
 import ReactCertificate from "../../Images/Diplomas/diploma-react-1.jpg";
 import JsFuncamentos from "../../Images/Diplomas/diploma-fundamentos-javascript-1.jpg";
@@ -53,14 +52,14 @@ const certificates = [
 
 export function ListPortfolio() {
 	return (
-		<Container>
-			<List>
-				<ContainerList>
+		<div className='content-grid-ContentPortfolio'>
+			<div className='list_portfolio-container'>
+				<div className='grid-list-portfolio'>
 					{certificates.map(project => (
 						<Portfolio {...project} />
-						))}
-				</ContainerList>
-			</List>
-		</Container>
+					))}
+				</div>
+			</div>
+		</div>
 	);
 }

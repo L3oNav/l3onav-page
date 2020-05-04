@@ -1,19 +1,17 @@
 import React from "react";
-import {Container, InfoContainer, Img} from './styles'
-
 function UserInf(props) {
-  return (
-      <Container>
-        <Img src={props.UsrImg} alt="Foto de Leonardo"/>
-        <InfoContainer>
-            <a href="https://platzi.com/@L3oNav/" target="_blank">
-              <h1>{props.UsrName}</h1>
-              <h3>{props.UsrJob}</h3>
-            </a>
-            <h3>click &#8593;</h3>
-        </InfoContainer>
-      </Container>
-  );
+	return (
+		<div className="userInf-container">
+			<img src={props.UsrImg} alt='Foto de Leonardo' className="info-img"/>
+			<div className='info-text'>
+				<a href='https://platzi.com/@L3oNav/' target='_blank'>
+					<h1>{props.UsrName}</h1>
+					<h3>{props.UsrJob}</h3>
+				</a>
+				<h3>click &#8593;</h3>
+			</div>
+		</div>
+	);
 }
 
 export default UserInf;
