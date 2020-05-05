@@ -15,7 +15,8 @@
     text-align: justify;
     width: 95%;
     @media screen and (min-width: 1024px) and (max-width: 1440px) {
-        width: 60%;
+        margin-right: auto;
+        width: 74.5%;
     }
     @media screen and (min-width: 1441px){
         width: 55%;

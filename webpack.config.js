@@ -5,7 +5,6 @@ module.exports = {
     output: {
         path: path.resolve(__dirname, 'build'),
         filename: 'js/app.bundle.js',
-
     },
     module: {
         rules: [
@@ -21,6 +20,7 @@ module.exports = {
             },
             {
                 test:/\.s[ac]ss$/i,
+                exclude: /node_modules/,
                 use: [
                     // Creates `style` nodes from JS strings
                     'style-loader',
@@ -32,6 +32,7 @@ module.exports = {
             },
             {
                 test:/\.(jpg|png|gif|woff|eot|ttf|svg|mp4|webm)$/,
+                exclude: /node_modules/,
                 use: [
                     'file-loader',
                     {
