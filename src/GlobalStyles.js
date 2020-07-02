@@ -1,4 +1,4 @@
-import { createGlobalStyle } from "styled-components";
+import styled, { createGlobalStyle } from "styled-components";
 
 export const GlobalStyle = createGlobalStyle`
     @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
@@ -19,4 +19,12 @@ export const GlobalStyle = createGlobalStyle`
         color: #fff;
         text-decoration: none;
     }
+`
+export const Background = styled.div`
+    display: block;
+    background-color: #242424;
+    width:100%;
+    height:100%;
+    position: absolute;
+    z-index: -100;
 `

@@ -1,24 +1,24 @@
-import React, { Component } from "react";
-import { BrowserRouter, Route, Switch } from "react-router-dom";
-import App from "../App.jsx";
-import NotFound from "../Components/NotFound.jsx";
+import React, { Component } from 'react';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import Layout from '../Layout.jsx';
 //? Redux
-import { Provider } from "react-redux";
-import { store } from "../Redux/index";
-import { GlobalStyle } from "../GlobalStyles";
+import { GlobalStyle } from '../GlobalStyles';
+//? Components
+import Home from '../Pages/Home/index';
 
 export class Router extends Component {
 	render() {
 		return (
-			<Provider store={store}>
-				<GlobalStyle />
-				<BrowserRouter>
+			<BrowserRouter>
+				<Layout>
+					<GlobalStyle />
 					<Switch>
-						<Route exact path='/' component={App} />
-						<Route component={NotFound} />
+						<Route exact path='/' component={Home} />
+						<Route exact path='/projects' component={Home} />
+						<Route exact path='/certificates' component={Home} />
 					</Switch>
-				</BrowserRouter>
-			</Provider>
+				</Layout>
+			</BrowserRouter>
 		);
 	}
 }
