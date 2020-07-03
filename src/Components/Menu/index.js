@@ -15,7 +15,7 @@ class Menu extends Component {
 	}
 
 	componentDidUpdate(prevProps, prevState) {
-		if (prevProps.language.name != this.props.language.name) {
+		if (prevProps.language.name !== this.props.language.name) {
 			this.props.getLanguage();
 		}
 	}

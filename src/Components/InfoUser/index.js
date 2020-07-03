@@ -1,5 +1,4 @@
-import React, { Component } from 'react';
-import { connect } from 'react-redux';
+import React from 'react';
 import MyImage from '../../Images/Userimg.jpg';
 import { Img, TextInfo, Container } from './styles';
 export const InfoUser = ({ job }) => {

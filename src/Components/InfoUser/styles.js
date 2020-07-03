@@ -4,10 +4,6 @@ export const Img = styled.img`
 	width: 180px;
 	height: 180px;
 	border-radius: 50%;
-	@media screen and (min-width: 1000px) {
-		width: 250px;
-		height: 250px;
-	}
 `;
 
 export const TextInfo = styled.div`
@@ -15,6 +11,12 @@ export const TextInfo = styled.div`
 	margin: 0 auto;
 	@media screen and (min-width: 1000px) {
 		font-size: 25px;
+		div {
+			font-size: 30px;
+		}
+	}
+	@media screen and (min-width: 700px) {
+		font-size: 20px;
 		div {
 			font-size: 30px;
 		}

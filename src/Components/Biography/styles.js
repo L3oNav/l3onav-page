@@ -10,6 +10,9 @@ export const Container = styled.div`
 
 export const TextContainer = styled.div`
 	text-align: justify;
+	@media screen and (min-width: 700px) {
+		font-size: 20px;
+	}
 	@media screen and (min-width: 1040px) {
 		font-size: 25px;
 	}

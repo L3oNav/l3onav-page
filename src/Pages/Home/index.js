@@ -5,9 +5,7 @@ import { getLanguage } from '../../Redux/Actions/languages';
 import Biography from '../../Components/Biography/index';
 import Certificates from '../../Components/Certificates';
 class Home extends Component {
-	constructor(props) {
-		super(props);
-	}
+
 	async componentDidMount() {
 		if (!this.props.language) {
 			await this.props.getLanguage();
@@ -19,7 +17,7 @@ class Home extends Component {
 				<div>
 					<InfoUser job={this.props.language.job} />
 					<Biography />
-					<Certificates/>
+					<Certificates />
 				</div>
 			);
 		} else {
