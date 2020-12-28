@@ -17,7 +17,7 @@ class Home extends Component {
 				<div>
 					<InfoUser job={this.props.language.job} />
 					<Biography />
-					<Certificates />
+					{/*<Certificates />*/}
 				</div>
 			);
 		} else {
@@ -25,14 +25,17 @@ class Home extends Component {
 		}
 	}
 }
+
 const mapStateToProps = state => {
 	return {
 		language: state
 	};
 };
+
 const mapDispatchToProps = {
 	getLanguage
 };
+
 export default connect(
 	mapStateToProps,
 	mapDispatchToProps

@@ -14,8 +14,6 @@ export class Router extends Component {
 					<GlobalStyle />
 					<Switch>
 						<Route exact path='/' component={Home} />
-						<Route exact path='/projects' component={Home} />
-						<Route exact path='/certificates' component={Home} />
 					</Switch>
 				</Layout>
 			</BrowserRouter>

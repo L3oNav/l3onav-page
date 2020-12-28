@@ -9,7 +9,7 @@ class Layout extends Component {
       <React.Fragment>
         <Background>
           <Particles
-            height='2500px'
+            height='auto'
             params={{
               'particles': {
                 'number': {

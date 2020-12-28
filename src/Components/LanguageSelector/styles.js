@@ -16,4 +16,10 @@ export const Column = styled.div`
 	display: flex;
 	cursor: pointer;
 	user-select: none;
+	@media screen and (min-width: 1000px) {
+		width: 50%;
+		display: flex-block;
+		margin: 0 auto;
+		padding-left: 0;
+	}
 `;
