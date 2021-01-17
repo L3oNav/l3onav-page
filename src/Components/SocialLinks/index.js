@@ -32,7 +32,7 @@ const social = [
 	{
 		id: 5,
 		component: FiMail,
-		url: 'mailto:leo785.lol@gmail.com?'
+		url: 'mailto:info@l3onav.tech?'
 	},
 	{
 		id: 6,
