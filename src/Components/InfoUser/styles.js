@@ -4,6 +4,8 @@ export const Img = styled.img`
 	width: 260px;
 	height: 260px;
 	border-radius: 50%;
+	object-fit: cover;
+	object-position: 0 30%;
 `;
 
 export const TextInfo = styled.div`
