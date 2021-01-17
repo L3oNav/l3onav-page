@@ -14,7 +14,7 @@ const social = [
 		id: 1,
 		alt: 'instagram',
 		component: FiInstagram,
-		url: 'https://www.instagram.com/l3onav/?hl=es-la'
+		url: 'https://www.instagram.com/l3onav.py'
 	},
 	{
 		id: 2,
