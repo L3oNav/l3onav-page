@@ -47,7 +47,7 @@ class SocialLinks extends Component {
 			<Container>
 				<Grid>
 					{social.map(link => (
-							<Articles key={link.id} href={link.url} target='_blank'>
+							<Articles key={link.id} href={link.url} target='_blank' ref="noopener">
 								<link.component size='35' color='white' />
 							</Articles>
 						)
