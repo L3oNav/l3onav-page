@@ -4,27 +4,33 @@ import { Background } from './GlobalStyles';
 import Particles from 'react-particles-js';
 
 class Layout extends Component {
+
+  handleWidth = () => { 
+    let body = document.body.clientWidth
+    if (body <= 430) {
+      return 22
+    }
+    return 50
+  }
+
   render() {
     return (
-      <React.Fragment>
+      <div>
         <Background>
           <Particles
-            height='auto'
             params={{
               'particles': {
                 'number': {
-                  'value': 50,
-                  'max': 70
+                  'value': this.handleWidth()
                 },
                 'size': {
-                  'value': 3
+                  'value': 2
                 }
               },
               'interactivity': {
                 'events': {
                   'onclick': {
-                    'enable': true,
-                    'mode': 'push'
+                    'enable': false
                   }
                 }
               }
@@ -33,7 +39,7 @@ class Layout extends Component {
         </Background>
         <Header />
         <div>{this.props.children}</div>
-      </React.Fragment>
+      </div>
     );
   }
 }

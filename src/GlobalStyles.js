@@ -12,12 +12,16 @@ export const GlobalStyle = createGlobalStyle`
         background-color: #242424;
     }
     #root{
-        /* width:100%;
-        height: 100%; */
+        width:100%;
+        height: 100%;
     }
     a{
         color: #fff;
         text-decoration: none;
+    }
+    #tsparticles {
+        width: 100%;
+        height: 100%;
     }
 `
 export const Background = styled.div`
@@ -28,3 +32,4 @@ export const Background = styled.div`
     position: absolute;
     z-index: -100;
 `
+

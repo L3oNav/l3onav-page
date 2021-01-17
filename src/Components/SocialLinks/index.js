@@ -46,14 +46,12 @@ class SocialLinks extends Component {
 		return (
 			<Container>
 				<Grid>
-					{social.map(link => {
-						let Icon = link.component;
-						return (
-							<Articles href={link.url} target='_blank'>
-								<Icon size='35' color='white' />
+					{social.map(link => (
+							<Articles key={link.id} href={link.url} target='_blank'>
+								<link.component size='35' color='white' />
 							</Articles>
-						);
-					})}
+						)
+					)}
 				</Grid>
 			</Container>
 		);

@@ -3,7 +3,8 @@ import { InfoUser } from '../../Components/InfoUser/index';
 import { connect } from 'react-redux';
 import { getLanguage } from '../../Redux/Actions/languages';
 import Biography from '../../Components/Biography/index';
-import Certificates from '../../Components/Certificates';
+//import Certificates from '../../Components/Certificates';
+
 class Home extends Component {
 
 	async componentDidMount() {
