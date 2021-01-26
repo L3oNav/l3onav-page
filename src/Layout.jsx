@@ -38,7 +38,7 @@ class Layout extends Component {
           />
         </Background>
         <Header />
-        <div>{this.props.children}</div>
+        {this.props.children}
       </div>
     );
   }

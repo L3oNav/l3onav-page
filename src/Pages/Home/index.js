@@ -1,43 +1,18 @@
-import React, { Component } from 'react';
+import React, { useContext } from 'react';
 import { InfoUser } from '../../Components/InfoUser/index';
-import { connect } from 'react-redux';
-import { getLanguage } from '../../Redux/Actions/languages';
 import Biography from '../../Components/Biography/index';
+import LangContext from '../../hooks/language';
 //import Certificates from '../../Components/Certificates';
 
-class Home extends Component {
-
-	async componentDidMount() {
-		if (!this.props.language) {
-			await this.props.getLanguage();
-		}
-	}
-	render() {
-		if (this.props.language) {
-			return (
-				<div>
-					<InfoUser job={this.props.language.job} />
-					<Biography />
-					{/*<Certificates />*/}
-				</div>
-			);
-		} else {
-			return 'Loading...';
-		}
-	}
+const Home = (props) => {
+	const {title, biography, job} = useContext(LangContext).currentLangData;	
+	return (
+		<div>
+			<InfoUser job={job}/>
+			<Biography title={title} biography={biography} />
+			{/*<Certificates />*/}
+		</div>
+	);
 }
 
-const mapStateToProps = state => {
-	return {
-		language: state
-	};
-};
-
-const mapDispatchToProps = {
-	getLanguage
-};
-
-export default connect(
-	mapStateToProps,
-	mapDispatchToProps
-)(Home);
+export default Home
