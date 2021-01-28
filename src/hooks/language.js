@@ -9,9 +9,9 @@ const LangContext = React.createContext({
 
 export default LangContext;
 
-export function LangProvider (props) {
+export const LangProvider = (props) => {
 
-  const [lang, setLang] = useState(window.localStorage.getItem('appUILang') || window.navigator.language);
+  const [lang, setLang] = useState('en-US');
   
 
   useLayoutEffect(() => {
