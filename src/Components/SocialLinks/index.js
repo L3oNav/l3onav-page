@@ -5,7 +5,7 @@ import {
 	FiTwitter,
 	FiGithub,
 	FiMail,
-	FiGitlab
+	FiPackage
 } from 'react-icons/fi';
 import { Container, Articles, Grid } from './styles';
 
@@ -20,7 +20,7 @@ const social = [
 		id: 2,
 		alt: 'linkedin',
 		component: FiLinkedin,
-		url: 'https://www.linkedin.com/in/leonardo-nava-6015b3160'
+		url: 'https://www.linkedin.com/in/leonardonava'
 	},
 	{
 		id: 3,
@@ -38,13 +38,13 @@ const social = [
 		id: 5,
 		alt: 'email',
 		component: FiMail,
-		url: 'mailto:info@l3onav.tech?'
+		url: 'mailto:L3oNav@outlook.com?'
 	},
 	{
 		id: 6,
-		alt: 'gitlab',
-		component: FiGitlab,
-		url: 'https://gitlab.com/L3oNav/l3onav-portfolio'
+		alt: 'repository',
+		component: FiPackage, 
+		url: 'https://github.com/L3oNav/l3onav-page'
 	}
 ];
 

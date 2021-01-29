@@ -7,8 +7,8 @@ export const Languages = {
 	},
 	'en-US': {
 		job: 'Web app developer with ReactJs and Django.',
-		title: 'Hello, World',
-		biography:'I am Leonardo Nava, I will study physics, I would like to be a data scientist. I like learning new things every day, this is how I learned to program, learning alone, after a few months I discovered platzi where it really was a change in my learning. I am someone who likes to read a lot, I read epic fantasy, math, physics, I do my best to improve day by day.',
+		title: 'Hello World',
+		biography:'I am Leonardo Nava, I will study physics and would like to be a data scientist. I love to learn new things every day. This is how I learned to program, by myself, after a few months I discovered Platzi, it was a game changer. I am someone who likes to read a lot, my favorite subjects are epic fantasy, math, physics, I do my best to improve day by day.',
 		buttons: ['Certificates', 'Projects']
 	}
 };
