@@ -1,6 +1,6 @@
-import React, { Component } from 'react';
-import {LangProvider} from './hooks/language';
-import Router from './Routes/Router';
+import React, { Component } from "react";
+import { LangProvider } from "./hooks/language";
+import Router from "./Routes/Router";
 
 class App extends Component {
 	render() {
@@ -11,6 +11,5 @@ class App extends Component {
 		);
 	}
 }
-
 
 export default App;

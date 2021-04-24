@@ -1,8 +1,8 @@
-import {Languages} from '../contexts/languages.context'
-import React, { useState, useLayoutEffect } from 'react';
+import { Languages } from "../contexts/languages.context";
+import React, { useState, useLayoutEffect } from "react";
 
 const LangContext = React.createContext({
-  lang: '',
+  lang: "",
   currentLangData: {},
   switchLang: () => {},
 });
@@ -10,31 +10,30 @@ const LangContext = React.createContext({
 export default LangContext;
 
 export const LangProvider = (props) => {
-
-  const [lang, setLang] = useState('en-US');
-  
+  const [lang, setLang] = useState("en-US");
 
   useLayoutEffect(() => {
-    const selectedLang = window.localStorage.getItem('appUILang');
+    const selectedLang = window.localStorage.getItem("appUILang");
 
     if (selectedLang) {
       setLang(selectedLang);
-    } 
-  }, [lang])
+    }
+  }, [lang]);
 
   const switchLang = (ln) => {
     setLang(ln);
-    window.localStorage.setItem('appUILang', ln);
+    window.localStorage.setItem("appUILang", ln);
   };
 
   return (
-    <LangContext.Provider value={{
-      lang, 
-      switchLang, 
-      currentLangData: Languages[lang]
-    }}>
+    <LangContext.Provider
+      value={{
+        lang,
+        switchLang,
+        currentLangData: Languages[lang],
+      }}
+    >
       {props.children}
     </LangContext.Provider>
   );
 };
-
