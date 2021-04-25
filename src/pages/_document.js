@@ -10,9 +10,8 @@ class MyDocument extends Document {
     return (
       <Html lang="en">
         <Head>
-          <title>L3oNav &#916;</title>
           <meta name="theme-color" content="#000000" />
-          <meta charset="utf-8" />
+          <meta charSet="utf-8" />
           <link rel="shortcut icon" href="/favicon.ico" />
         </Head>
         <body>
