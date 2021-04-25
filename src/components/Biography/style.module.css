@@ -1,0 +1,26 @@
+.container {
+	width: 80%;
+	margin: 0 auto;
+}
+
+@media screen and (min-width: 1000px) {
+	.container {
+		width: 48%;
+	}
+}
+
+.text_container {
+	text-align: justify;
+	width: 100%;
+}
+
+@media screen and (min-width: 700px) {
+	.text_container {
+		font-size: 20px;
+	}
+}
+@media screen and (min-width: 1040px) {
+	.text_container {
+		font-size: 25px;
+	}
+}

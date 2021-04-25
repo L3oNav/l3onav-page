@@ -14,7 +14,6 @@ export const LangProvider = (props) => {
 
   useLayoutEffect(() => {
     const selectedLang = window.localStorage.getItem("appUILang");
-
     if (selectedLang) {
       setLang(selectedLang);
     }
