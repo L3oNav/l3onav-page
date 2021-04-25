@@ -1,5 +1,5 @@
 import { Languages } from "../contexts/languages.context";
-import React, { useState, useLayoutEffect } from "react";
+import React, { useState, useEffect } from "react";
 
 const LangContext = React.createContext({
   lang: "",
@@ -12,7 +12,7 @@ export default LangContext;
 export const LangProvider = (props) => {
   const [lang, setLang] = useState("en-US");
 
-  useLayoutEffect(() => {
+  useEffect(() => {
     const selectedLang = window.localStorage.getItem("appUILang");
     if (selectedLang) {
       setLang(selectedLang);

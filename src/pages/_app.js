@@ -1,8 +1,6 @@
-import React, { lazy } from "react";
+import Layout from "../components/Layout";
 import { LangProvider } from "../hooks/language";
 import "./global.css";
-
-const Layout = () => lazy(() => import("../components/Layout"));
 
 const MyApp = ({ Component, pageProps }) => (
   <LangProvider>
