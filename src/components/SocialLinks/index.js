@@ -7,8 +7,7 @@ import {
 	FiMail,
 	FiPackage,
 } from "react-icons/fi";
-import { Container, Articles, Grid } from "./styles";
-
+import styles from "./style.module.css";
 const social = [
 	{
 		id: 1,
@@ -49,10 +48,11 @@ const social = [
 ];
 
 const SocialLinks = () => (
-	<Container>
-		<Grid>
+	<div className={styles.container}>
+		<div className={styles.grid}>
 			{social.map((link) => (
-				<Articles
+				<div
+					className={styles.article}
 					key={link.id}
 					href={link.url}
 					target="_blank"
@@ -60,10 +60,11 @@ const SocialLinks = () => (
 					alt={link.alt}
 				>
 					<link.component size="35" color="white" />
-				</Articles>
+					<p>{link.alt}</p>
+				</div>
 			))}
-		</Grid>
-	</Container>
+		</div>
+	</div>
 );
 
 export default SocialLinks;
