@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import { InfoUser } from "../components/InfoUser/index";
+import InfoUser from "../components/InfoUser/index";
 import Biography from "../components/Biography/index";
 import LangContext from "../hooks/language";
 

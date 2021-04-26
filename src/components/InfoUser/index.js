@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 import styles from "./style.module.css";
 
-export const InfoUser = ({ job }) => {
+const InfoUser = ({ job }) => {
 	return (
 		<div className={styles.container}>
 			<Image
@@ -19,3 +19,5 @@ export const InfoUser = ({ job }) => {
 		</div>
 	);
 };
+
+export default InfoUser;
