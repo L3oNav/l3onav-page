@@ -1,8 +1,8 @@
 import React, { useContext } from "react";
+import Head from "next/head";
 import InfoUser from "../components/InfoUser/index";
 import Biography from "../components/Biography/index";
 import LangContext from "../hooks/language";
-
 const Home = (props) => {
   const { title, biography, job } = useContext(LangContext).currentLangData;
   return (
