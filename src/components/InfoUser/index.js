@@ -12,10 +12,8 @@ const InfoUser = ({ job }) => {
 				width={250}
 				height={250}
 			/>
-			<p className={styles.text_info}>
-				<div>Leonardo Nava</div>
-				{job}
-			</p>
+			<h2>Leonardo Nava</h2>
+			<p className={styles.text_info}>{job}</p>
 		</div>
 	);
 };

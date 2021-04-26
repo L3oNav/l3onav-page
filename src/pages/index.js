@@ -3,7 +3,8 @@ import Head from "next/head";
 import InfoUser from "../components/InfoUser/index";
 import Biography from "../components/Biography/index";
 import LangContext from "../hooks/language";
-const Home = (props) => {
+
+const Home = () => {
   const { title, biography, job } = useContext(LangContext).currentLangData;
   return (
     <>

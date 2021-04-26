@@ -16,7 +16,6 @@ class MyDocument extends Document {
         <body>
           <Main />
           <NextScript />
-          <script src="/particles.min.js"></script>
         </body>
       </Html>
     );

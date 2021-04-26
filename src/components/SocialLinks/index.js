@@ -51,7 +51,7 @@ const SocialLinks = () => (
 	<div className={styles.container}>
 		<div className={styles.grid}>
 			{social.map((link) => (
-				<div
+				<a
 					className={styles.article}
 					key={link.id}
 					href={link.url}
@@ -61,7 +61,7 @@ const SocialLinks = () => (
 				>
 					<link.component size="35" color="white" />
 					<p>{link.alt}</p>
-				</div>
+				</a>
 			))}
 		</div>
 	</div>
