@@ -6,11 +6,15 @@ import LangContext from "../hooks/language";
 const Home = (props) => {
   const { title, biography, job } = useContext(LangContext).currentLangData;
   return (
-    <div>
-      <InfoUser job={job} />
-      <Biography title={title} biography={biography} />
-      {/*<Certificates />*/}
-    </div>
+    <>
+      <Head>
+        <title>L3oNav &#916;</title>
+      </Head>
+      <div>
+        <InfoUser job={job} />
+        <Biography title={title} biography={biography} />
+      </div>
+    </>
   );
 };
 

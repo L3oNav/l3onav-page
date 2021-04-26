@@ -6,7 +6,6 @@ import styles from "./style.module.css";
 
 const Layout = (props) => {
   const sizes = useWindowSize();
-  console.log(sizes);
   const handleWidth = () => {
     let body = sizes.width;
     if (body <= 430) {
